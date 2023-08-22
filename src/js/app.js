@@ -1,12 +1,15 @@
 
 class ErrorRepository {
 
-    constructor(errorСode, errorValue) {
+    constructor() {
         let map = new Map();
-        this.errorСode = errorСode;
-        this.errorValue = errorValue;
-
+    
     }
+
+    addError(code, message) {
+        this.map.set(code, message);
+    }
+
 
     
     translate(code) {
